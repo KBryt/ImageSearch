@@ -1,4 +1,4 @@
-import DeepImageSearch.config as config
+import ImageSearch.config as config
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,7 +8,7 @@ import numpy as np
 from annoy import AnnoyIndex
 from tqdm import tqdm
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tensorflow.keras.applications.mobilenet import MobileNet, preprocess_input
 from tensorflow.keras.models import Model
 import tensorflow as tf
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
@@ -31,8 +31,8 @@ class LoadData:
 
 class FeatureExtractor:
     def __init__(self):
-        # Use VGG-16 as the architecture and ImageNet for the weight
-        base_model = VGG16(weights='imagenet')
+        # Use MobileNet as the architecture and ImageNet for the weight
+        base_model = MobileNet(weights='imagenet')
         # Customize the model to return features from fully-connected layer
         self.model = Model(inputs=base_model.input, outputs=base_model.get_layer('fc1').output)
     def extract(self, img):
@@ -127,8 +127,10 @@ class SearchImage:
             axes.append(fig.add_subplot(4, 4, a+1))  
             plt.axis('off')
             plt.imshow(Image.open(img_list[a]))
+            plt.title(img_list[a] + '=' + str(round([a],2)))
         fig.tight_layout()
         fig.suptitle('Similar Result Found', fontsize=22)
+        
         plt.show(fig)
     def get_similar_images(self,image_path:str,number_of_images:int):
         self.image_path = image_path
