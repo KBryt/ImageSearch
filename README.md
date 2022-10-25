@@ -35,7 +35,7 @@ There are three important classes you need to load **LoadData** - for data loadi
 
 ```python
 # Importing the proper classes
-from DeepImageSearch import Index,LoadData,SearchImage
+from ImageSearch import Index,LoadData,SearchImage
 ```
 
 ### 2. Loading the Images Data
@@ -75,7 +75,7 @@ SearchImage().plot_similar_images(image_path = image_list[0])
 
 ```python
 # Importing the proper classes
-from DeepImageSearch import Index,LoadData,SearchImage
+from ImageSearch import Index,LoadData,SearchImage
 # load the Images from the Folder (You can also import data from multiple folder in python list type)
 image_list = LoadData().from_folder(['images','wiki-images'])
 # For Faster Serching we need to index Data first, After Indexing all the meta data stored on the local path
