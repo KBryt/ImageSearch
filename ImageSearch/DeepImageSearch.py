@@ -1,4 +1,4 @@
-import config
+from ImageSearch.ImageSearch import config
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
