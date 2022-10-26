@@ -1,3 +1,6 @@
+
+#I have change the model used in the Deep Image Search to suite my work. Please refer to the original page for more details
+
 # Deep Image Search - AI-Based Image Search Engine
 <p align="center"><img src="https://github.com/TechyNilesh/DeepImageSearch/blob/main/logo/deep%20image%20search%20logo%20New.png?raw=true" alt="Brain+Machine" height="218" width="350"></p>
 
@@ -16,13 +19,6 @@
 - Best implementation for College students and freshers for project creation.
 - Applications are Images based E-commerce recommendation, Social media and other image-based platforms that want to implement image recommendation and search.
 
-## Installation
-
-This library is compatible with both *windows* and *Linux system* you can just use **PIP command** to install this library on your system:
-
-```shell
-pip install ImageSearch
-```
 
 If you are facing any VS C++ 14 related issue in windows during installation, kindly refer to following solution: [Pip error: Microsoft Visual C++ 14.0 is required](https://stackoverflow.com/questions/44951456/pip-error-microsoft-visual-c-14-0-is-required "Pip error: Microsoft Visual C++ 14.0 is required")
 
@@ -32,11 +28,6 @@ We have provided the **Demo** folder under the *GitHub repository*, you can find
 
 ### 1. Importing the Important Classes
 There are three important classes you need to load **LoadData** - for data loading, **Index** - for indexing the images to database/folder, **SearchImage** - For searching and Plotting the images
-
-```python
-# Importing the proper classes
-from ImageSearch import Index,LoadData,SearchImage
-```
 
 ### 2. Loading the Images Data
 
