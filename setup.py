@@ -10,8 +10,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
   long_description_content_type="text/markdown",
-  name = 'ImageSearch',         
-  packages = ['ImageSearch'],
+  name = 'DeepImageSearch',         
+  packages = ['DeepImageSearch'],
   version = '1.4',
   license='MIT',        
   description = 'Deep Image Search is an AI-based image search engine that includes deep transfor learning features Extraction and tree-based vectorized search.',
