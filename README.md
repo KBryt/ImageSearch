@@ -1,7 +1,8 @@
 
-#I have change the model used in the Deep Image Search to suite my work. Please refer to the original page for more details
+# I have change the model used in the Deep Image Search to suite my work. Please refer to the original page for more details
 
 # Deep Image Search - AI-Based Image Search Engine
+
 <p align="center"><img src="https://github.com/TechyNilesh/DeepImageSearch/blob/main/logo/deep%20image%20search%20logo%20New.png?raw=true" alt="Brain+Machine" height="218" width="350"></p>
 
 **Deep Image Search** is an AI-based image search engine that includes **deep transfer learning features Extraction** and **tree-based vectorized search technique.**
